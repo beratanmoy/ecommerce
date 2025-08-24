@@ -1,0 +1,231 @@
+@media (min-width: 1366px) {
+   .actionMobile {
+      display: none;
+   }
+}
+
+@media (max-width: 1366px) {
+   .actionMobile {
+      display: none;
+   }
+}
+
+@media (max-width: 1280px) {
+   .actionMobile {
+      display: none;
+   }
+}
+
+@media (max-width: 1024px) {
+   .actionMobile {
+      display: none;
+   }
+
+   .ads .textBox h2 {
+      font-size: 20px;
+   }
+
+   .ads .textBox h3 {
+      font-size: 16px;
+   }
+
+   .ads .textBox img {
+      width: 160px;
+   }
+}
+
+@media (max-width: 768px) {
+   .actionDesktop {
+      display: none;
+   }
+
+   .actionMobile {
+      display: block;
+   }
+
+   .btn {
+      padding: 10px 8px;
+   }
+
+   .ads .textBox h2 {
+      font-size: 16px;
+   }
+
+   .ads .textBox h3 {
+      font-size: 14px;
+   }
+
+   .ads .textBox img {
+      width: 120px;
+   }
+
+   .footerBox {
+      flex-direction: column;
+   }
+
+   .Product .menu {
+      width: 30%;
+   }
+
+   .Product #mainProduct {
+      width: 70%;
+   }
+
+   .Product .ProductBox .Product-con {
+      width: calc(50% - 24px);
+   }
+
+   .Product .ProductBox .Product-con .imgBox img {
+      height: 190px;
+   }
+
+   .Product .ProductBox .Product-con .textBox h2 {
+      font-size: 14px;
+   }
+
+   .Product .ProductBox .Product-con .textBox .price {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 480px) {
+   .ads {
+      flex-direction: column;
+      height: 350px;
+      overflow: hidden;
+   }
+
+   .ads .imgBox {
+      width: 100%;
+      height: 70%;
+   }
+
+   .ads .textBox {
+      width: 100%;
+      height: 30%;
+   }
+
+   .ads .imgBox .adsImgOne {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* display: none; */
+   }
+
+   .ads .imgBox .adsImgTwo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+   }
+
+   .ads .textBox img {
+      width: 90px;
+   }
+
+   .footerBox {
+      flex-direction: column;
+   }
+
+   .Product {
+      display: none;
+   }
+
+   .mobileProduct {
+      width: 90%;
+      display: flex;
+      padding: 16px;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 0 auto;
+   }
+
+   .mobileProduct button {
+      border: none;
+      width: calc(33.33% - 16px);
+      background-color: inherit;
+   }
+
+   .mobileProduct button img {
+      width: 100%;
+   }
+
+
+   /* dialog box product  */
+   .ProductBox {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .ProductBox .Product-con {
+      width: 100%;
+      /* height: 400px; */
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+      padding: 10px;
+   }
+
+   .ProductBox .Product-con .imgBox {
+      width: 100%;
+      height: 70%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+   }
+
+   .ProductBox .Product-con .textBox {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+   }
+
+   .ProductBox .Product-con .textBox h2 {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+      color: #5C5C5C;
+   }
+
+   .ProductBox .Product-con .textBox .price {
+      font-size: 24px;
+      font-weight: bold;
+   }
+
+   .ProductBox .Product-con .textBox .Free-Delivery {
+      color: #5C5C5C;
+      font-size: 12px;
+   }
+   .ProductBox .Product-con .textBox .Ratings {
+      background-color: green;
+      color: #fff;
+      font-size: 12px;
+      width: fit-content;
+      padding: 6px 12px;
+      border-radius: 12px;
+   }
+
+   .ProductBox .Product-con .imgBox img{
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px
+}
+.ui-dialog-titlebar {
+   background-color: #F12F1E;
+   opacity: 0.9;
+}
+.ui-dialog-title {
+   color: #fff;
+}
+
+
+}

@@ -1,0 +1,263 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+header{
+	width: 100%;
+	background-color: #F8F9FA;
+}
+.headerBox{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	padding: 8px;
+}
+.logoBox img {
+	width: 120px;
+}
+
+.btn {
+	background-color: inherit;
+	border: none;
+	color: #F12F1E;
+	padding: 10px 16px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+}
+.btn:hover{
+	color: #2099E2;
+}
+
+/* Login & Register */
+#login, #register {
+	display: none;
+}
+#login form, #register form{
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 6px;
+	font-size: 20px;
+}
+#login div, #register div {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	
+}
+#login input, #register input{
+	padding: 12px;
+	font-size: 16px;
+}
+ 
+/* ads slider  */
+.ads {
+	padding: 5px;
+	width: 90%;
+	height: 200px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 16px;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.ads .imgBox {
+	width: 50%;
+	height: 100%;
+}
+.ads .textBox {
+	width:50%;
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.ads .imgBox .adsImgOne {
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+	display: none;
+}
+.ads .imgBox .adsImgTwo {
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+	display: none;
+}
+.ads .textBox h2 {
+	padding: 0;
+	margin: 0;
+	font-family: 'Oswald';
+	font-weight: 600;
+	font-size: 32px;
+	color: #F12F1E;
+}
+.ads .textBox h3 {
+	padding: 0;
+	margin: 10px 0;
+	font-size: 24px;
+}
+.ads .textBox img {
+	width: 200px;
+}
+
+.Product {
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+	border-radius: 0;
+	border: none;
+}
+
+.Product .menu{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0;
+	border: none;
+	background-color: #f9f9f9;
+	padding: 14px;
+}
+.Product .menu li{
+	background-color: inherit;
+	border: none;
+}
+.Product .menu .ui-tabs-anchor {
+	color: #000;
+	font-weight: 600;
+}
+.Product .menu .ui-tabs-anchor:hover {
+	color: #351C75;
+}
+.Product .menu .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #2099E2;
+}
+.Product #mainProduct{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0;
+	border: none;
+}
+.Product #search {
+	padding: 10px;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid #2099E2;
+}
+.Product #search:focus{
+	outline: 1px solid #2099E2;
+}
+.ui-widget.ui-widget-content {
+	border: none;
+}
+.Product .ProductBox {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.Product .ProductBox .Product-con{
+	width: calc(33.33% - 24px);
+	/* height: 400px; */
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+.Product .ProductBox .Product-con .imgBox {
+	width: 100%;
+	height: 70%;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.Product .ProductBox .Product-con .textBox {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.Product .ProductBox .Product-con .textBox h2 {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	color: #5C5C5C;
+}
+.Product .ProductBox .Product-con .textBox .price {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.Product .ProductBox .Product-con .textBox .Free-Delivery {
+	color: #5C5C5C;
+	font-size: 12px;
+}
+.Product .ProductBox .Product-con .textBox .Ratings {
+	background-color: green;
+	color: #fff;
+	font-size: 12px;
+	width: fit-content;
+	padding: 6px 12px;
+	border-radius: 12px;
+}
+.Product .ProductBox .Product-con .imgBox img{
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px
+}
+
+/* mobile menu  */
+.mobileProduct {
+	display: none;
+}
+#ethnicWearMobile, #westernDressesMobile, #MenswearMobile {
+   display: none;
+}
+
+footer {
+	background-color: #351C75;
+}
+.footerBox {
+	padding: 16px;
+	width: 90%;
+	display: flex;
+	gap: 32px;
+	margin: 0 auto;
+}
+.footerBox div {
+	width: calc(100% - 32px);
+	color: #ccc;
+}
+.footerBox div img{
+	width: 150px;
+}
+.footerlinks {
+	display: flex;
+}
+.footerlinks ul{
+	list-style: none;
+}	
+.footerlinks li{
+	margin-bottom: 8px;
+}	
+.footerlinks a {
+	color: #ccc;
+	text-decoration: none;
+}
